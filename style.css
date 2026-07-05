@@ -231,7 +231,7 @@ nav a:hover::after{
     transform:translateY(-8px) scale(1.05);
 }
 
-.hero-image img{
+.hero- img{
     width:500px;
     animation:cakeFloat 4s ease-in-out infinite;
 }
@@ -257,13 +257,13 @@ nav a:hover::after{
     gap:60px;
 }
 
-.about-image{
+.about{
     flex:1;
     display:flex;
     justify-content:center;
 }
 
-.about-image img{
+.about img{
     width:420px;
     animation:floatCake 5s ease-in-out infinite;
     filter:drop-shadow(0 25px 35px rgba(0,0,0,.3));
