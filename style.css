@@ -231,7 +231,7 @@ nav a:hover::after{
     transform:translateY(-8px) scale(1.05);
 }
 
-.hero- img{
+.hero-image img{
     width:500px;
     animation:cakeFloat 4s ease-in-out infinite;
 }
