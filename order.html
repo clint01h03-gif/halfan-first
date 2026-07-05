@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Cake | Sweet Heaven Bakery</title>
+
+<link rel="stylesheet" href="order.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background-blur"></div>
+
+<div class="floating-cakes">
+<span>🎂</span>
+<span>🧁</span>
+<span>🍰</span>
+<span>🎂</span>
+<span>🍓</span>
+<span>🍩</span>
+</div>
+
+<section class="order-section">
+
+<div class="order-card">
+
+<h1>🎂 Cake Order Form</h1>
+
+<p>
+Customize your dream cake and place your order.
+</p>
+
+<form id="orderForm">
+
+<div class="grid">
+
+<div class="input-box">
+
+<label>Full Name</label>
+
+<input
+type="text"
+name="customer_name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Mobile Number</label>
+
+<input
+type="tel"
+name="mobile"
+placeholder="+94XXXXXXXXX"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Email</label>
+
+<input
+type="email"
+name="email"
+placeholder="example@gmail.com"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Event Type</label>
+
+<select name="event">
+
+<option>Birthday</option>
+<option>Wedding</option>
+<option>Anniversary</option>
+<option>Engagement</option>
+<option>Baby Shower</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+
+<label>Cake Type</label>
+
+<select name="cake">
+
+<option>Chocolate Cake</option>
+<option>Red Velvet</option>
+<option>Black Forest</option>
+<option>Vanilla Cake</option>
+<option>Strawberry Cake</option>
+<option>Fruit Cake</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+
+<label>Price (LKR)</label>
+
+<input
+type="number"
+name="price"
+placeholder="5000">
+
+</div>
+
+<div class="input-box">
+
+<label>Delivery Date</label>
+
+<input
+type="date"
+name="date"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Delivery Time</label>
+
+<input
+type="time"
+name="time">
+
+</div>
+
+</div>
+
+<div class="input-box full">
+
+<label>Delivery Address</label>
+
+<textarea
+name="address"
+placeholder="Enter full address..."
+required></textarea>
+
+</div>
+
+<div class="input-box full">
+
+<label>Special Message On Cake</label>
+
+<textarea
+name="message"
+placeholder="Happy Birthday Halfan ❤️"></textarea>
+
+</div>
+
+<div class="input-box full">
+
+<label>Reference Cake Image</label>
+
+<input
+type="file"
+accept="image/*">
+
+</div>
+
+<button
+type="submit"
+id="orderBtn">
+
+🎂 Place Order
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script src="order.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "nLrt16Gl2rkIi6fPk"
+});
+</script>
+
+<script src="order.js"></script>
+
+</body>
+</html>
